@@ -1,0 +1,1 @@
+You need to have node.js installed and add an .env file with INFURA_API_KEY setting in it. Downloand the source code and then run npm install after that run the sample using node fileName for reference node contract-demo.js. For the html samples you will need to have metamask installed and serve the hmtl files via web server such as Apache, ngnx or VS Code LiverServer extension.
