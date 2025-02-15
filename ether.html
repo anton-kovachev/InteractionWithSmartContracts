@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethers.js</title>
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.7.2/ethers.umd.min.js" integrity="sha512-FDcVY+g7vc5CXANbrTSg1K5qLyriCsGDYCE02Li1tXEYdNQPvLPHNE+rT2Mjei8N7fZbe0WLhw27j2SrGRpdMg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        // Connect to the blockchain via metamask
+        async function connect() {
+            const provider = new ethers.providers.Web3Provider(window.ethereum)
+
+            await provider.send("eth_requestAccounts", []);
+
+            const signer = provider.getSigner();
+        }   
+
+        connect();
+    </script>
+</body>
+
+</html>
